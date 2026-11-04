@@ -26,6 +26,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Check desktop and mobile page loads
         run: node scripts/browser-smoke.mjs
+      - name: Test workout setup, browser saving and downloads
+        run: node scripts/core-flows.mjs
       - name: Save screenshots for manual review
         if: always()
         uses: actions/upload-artifact@v4
