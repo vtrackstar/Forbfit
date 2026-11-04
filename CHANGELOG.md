@@ -1,5 +1,13 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-04 — Launch audit and testing
+
+- Fixed Foundation's placeholder logo navigation.
+- Added clear page descriptions to Athleticism and Gamer Fit.
+- Added GitHub Actions source checks and desktop/mobile Chromium smoke tests.
+- Checked the Foundation workout builder, browser saving, HTML export, Gamer Fit text download, Athleticism program navigation, and Run Strong offline download.
+- Added public-link status checks and a separate [launch audit](LAUNCH_AUDIT_2026-11-04.md) with remaining manual tests.
+
 ## 2026-11-04 — Repository cleanup and link consistency
 
 - Replaced the old `Forbfit` README with setup instructions, an accurate repository map, the current free Pages URL, guide links, and an honest release-check checklist.
