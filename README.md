@@ -31,6 +31,7 @@ This is the code for the website and the four guides. It's a simple static site 
 - [`guides/gamer-fit/index.html`](guides/gamer-fit/index.html) — Gamer Fit
 - [`guides/run-strong/index.html`](guides/run-strong/index.html) — Run Strong
 - [`CHANGELOG.md`](CHANGELOG.md) — notes on site updates
+- [`LAUNCH_AUDIT_2026-11-04.md`](LAUNCH_AUDIT_2026-11-04.md) — what's been tested and what still needs a closer look
 
 The exercise library is hosted separately. Some exercises in these guides link out to it.
 
@@ -39,6 +40,8 @@ The exercise library is hosted separately. Some exercises in these guides link o
 Most edits can be made directly in the HTML files. Just be careful with the workout builders: the exercise lists, training calculations, and interactive features are part of the page code, not separate files.
 
 Changes pushed to `main` are published through GitHub Pages. You can check whether a deployment finished on the [Actions page](https://github.com/vtrackstar/bfit/actions).
+
+I also added automatic checks for the page code and basic desktop/mobile workout flows. They're in `scripts/` and run through GitHub Actions whenever I update the site. They're useful for catching mistakes, but I still check the experience in a browser too.
 
 To preview the website on your own computer, clone or download the repo, open a terminal in the folder, and run:
 
