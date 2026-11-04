@@ -1,67 +1,57 @@
 # BFit Training Hub
 
-**Live website:** https://vtrackstar.github.io/bfit/  
-**Repository:** https://github.com/vtrackstar/bfit  
-**Hosting:** GitHub Pages (public `main` branch, repository root)
+**Website:** https://vtrackstar.github.io/bfit/
 
-BFit is a collection of four free, browser-based training guides. Each guide is a standalone HTML page with its own styling and interactions. The hub provides a starting point and links between guides.
+I built BFit to make training a little easier to figure out. A lot of people want to get stronger, move better, or get back into a routine, but don't know where to start or how to put a week of workouts together.
 
-## Guides
+These guides are my way of sharing what I've learned from coaching. You can use them on your own, whether you're brand new to training or just looking for a better way to organize what you're already doing.
 
-| Guide | Live link | Source |
-| --- | --- | --- |
-| Foundation Training | [Open Foundation](https://vtrackstar.github.io/bfit/guides/foundation/) | [`guides/foundation/index.html`](guides/foundation/index.html) |
-| Athleticism | [Open Athleticism](https://vtrackstar.github.io/bfit/guides/athleticism/) | [`guides/athleticism/index.html`](guides/athleticism/index.html) |
-| Gamer Fit | [Open Gamer Fit](https://vtrackstar.github.io/bfit/guides/gamer-fit/) | [`guides/gamer-fit/index.html`](guides/gamer-fit/index.html) |
-| Run Strong | [Open Run Strong](https://vtrackstar.github.io/bfit/guides/run-strong/) | [`guides/run-strong/index.html`](guides/run-strong/index.html) |
+## Pick a guide
 
-The hub homepage is [`index.html`](index.html).
+- **[Foundation Training](https://vtrackstar.github.io/bfit/guides/foundation/)** — Start here if you want to lift, build a routine, or make a workout that fits your time and equipment.
+- **[Athleticism](https://vtrackstar.github.io/bfit/guides/athleticism/)** — For sprinting, jumping, changing direction, and getting more out of your sport.
+- **[Gamer Fit](https://vtrackstar.github.io/bfit/guides/gamer-fit/)** — Movement, exercise, and everyday habits for people who spend a lot of time gaming or sitting at a screen.
+- **[Run Strong](https://vtrackstar.github.io/bfit/guides/run-strong/)** — Learn what different running workouts are for and how to fit them into your week.
 
-## Repository structure
+You don't have to read everything in order. Find the guide that matches what you want to work on, try a session, and come back to the explanations whenever you need them.
 
-```text
-/
-├── index.html                     # BFit hub
-├── README.md                      # Project overview and update instructions
-├── CHANGELOG.md                   # Changes in this GitHub repository
-├── 404.html                       # Not-found page
-├── sitemap.xml                    # Site URLs for search engines
-├── .nojekyll                      # Serve the project as static HTML
-└── guides/
-    ├── foundation/index.html
-    ├── athleticism/index.html
-    ├── gamer-fit/index.html
-    └── run-strong/index.html
-```
+## About the coaching
 
-## How updates work
+I'm a strength and conditioning coach, and I like helping people understand *why* they're doing something instead of just handing them a list of exercises.
 
-1. Update the appropriate HTML file in this repository. Keep its existing exercise data, IDs, workout logic, form actions, and export behavior intact unless those changes are explicitly planned.
-2. Use the GitHub Pages addresses above for links between guides; this keeps navigation usable even from downloaded standalone HTML files. The hub is always https://vtrackstar.github.io/bfit/.
-3. Preserve approved exercise-library links unless a verified replacement host exists. The exercise library is a separate site and is **not included in this repository**.
-4. Commit to `main`. GitHub Pages builds and deploys automatically using the repository's current Pages settings.
-5. Inspect [GitHub Actions](https://github.com/vtrackstar/bfit/actions) for deployment status; after a successful deployment, manually check desktop/mobile navigation, guide controls, saved state after reload, and generated downloads.
+The guides are free. If you'd rather have me build a plan around your goals, review your training, and make adjustments as you go, you can [ask about individual coaching here](https://forms.gle/f11PGA7PCUKaxrgq9). The form explains what's included and the pricing. Filling it out doesn't commit you to anything.
 
-### Local preview
+## What's in this repo?
 
-Download or clone the repository. For static navigation you can open the HTML files directly; for more realistic behavior (especially browser storage and exports), run a local HTTP server from the repository root:
+This is the code for the website and the four guides. It's a simple static site hosted through GitHub Pages, so there's no separate app or server to run.
+
+- [`index.html`](index.html) — the main BFit homepage
+- [`guides/foundation/index.html`](guides/foundation/index.html) — Foundation
+- [`guides/athleticism/index.html`](guides/athleticism/index.html) — Athleticism
+- [`guides/gamer-fit/index.html`](guides/gamer-fit/index.html) — Gamer Fit
+- [`guides/run-strong/index.html`](guides/run-strong/index.html) — Run Strong
+- [`CHANGELOG.md`](CHANGELOG.md) — notes on site updates
+
+The exercise library is hosted separately. Some exercises in these guides link out to it.
+
+### Making changes
+
+Most edits can be made directly in the HTML files. Just be careful with the workout builders: the exercise lists, training calculations, and interactive features are part of the page code, not separate files.
+
+Changes pushed to `main` are published through GitHub Pages. You can check whether a deployment finished on the [Actions page](https://github.com/vtrackstar/bfit/actions).
+
+To preview the website on your own computer, clone or download the repo, open a terminal in the folder, and run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/`. Offline previews do not guarantee hosted behavior, and external exercise links require internet access.
+Then visit `http://localhost:8000/`.
 
-## Coaching and content notes
+I still recommend checking the pages in a real browser after changes, especially on a phone. A successful deployment doesn't necessarily mean every workout button or download works as intended.
 
-- Coaching application: https://forms.gle/f11PGA7PCUKaxrgq9. Pricing/enrollment details are provided by the questionnaire, not by this public repository.
-- The four guide sources were brought into this repository from November 2, 2026 editorial candidates, with later first-person coaching and hub-navigation edits.
-- These are free educational resources, not individualized medical or rehabilitation plans.
-- Existing published HTML may still need full browser QA. A successful GitHub Pages deployment confirms publishing, **not** every interactive feature.
-- This repository does not currently manage or purchase a custom domain. Its canonical free address is https://vtrackstar.github.io/bfit/.
+If something looks wrong or a link is broken, you can [open an issue](https://github.com/vtrackstar/bfit/issues).
 
-## Before promoting a release
+---
 
-Check each guide's first-workout path; major buttons and back navigation; mobile viewports; exercise library links and variation accuracy; storage after refresh; export/print; and links to the coaching questionnaire. Keep launch/QA claims limited to tests actually performed.
-
-If you spot a broken link or content issue, use the [GitHub Issues](https://github.com/vtrackstar/bfit/issues) tab or keep a note in [`CHANGELOG.md`](CHANGELOG.md).
+*Thanks for checking out BFit. I hope you find something here that helps you train with a little more confidence.*
