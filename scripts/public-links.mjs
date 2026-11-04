@@ -7,7 +7,7 @@ const urls = [
   ['Athleticism', 'https://vtrackstar.github.io/bfit/guides/athleticism/'],
   ['Gamer Fit', 'https://vtrackstar.github.io/bfit/guides/gamer-fit/'],
   ['Run Strong', 'https://vtrackstar.github.io/bfit/guides/run-strong/'],
-  ['Exercise library', 'https://bfit-exercise-movement-library.stormy-lamp-8931.chatgpt.site/'],
+  ['Exercise library', 'https://bfit-exercise-movement-library.balouissaint.chatgpt.site/'],
   ['Coaching inquiry', 'https://forms.gle/f11PGA7PCUKaxrgq9']
 ];
 for (const [name,url] of urls) {
