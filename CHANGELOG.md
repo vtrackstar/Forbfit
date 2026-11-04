@@ -7,6 +7,7 @@
 - Added GitHub Actions source checks and desktop/mobile Chromium smoke tests.
 - Checked the Foundation workout builder, browser saving, HTML export, Gamer Fit text download, Athleticism program navigation, and Run Strong offline download.
 - Added public-link status checks and a separate [launch audit](LAUNCH_AUDIT_2026-11-04.md) with remaining manual tests.
+- Followed the verified library redirect and updated 171 exercise-library host references across the four guides, keeping exercise-ID fragments unchanged.
 
 ## 2026-11-04 — Repository cleanup and link consistency
 
