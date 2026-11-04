@@ -26,7 +26,7 @@ The hub homepage is [`index.html`](index.html).
 ├── CHANGELOG.md                   # Changes in this GitHub repository
 ├── 404.html                       # Not-found page
 ├── sitemap.xml                    # Site URLs for search engines
-├── robots.txt                     # Crawling instructions
+├── .nojekyll                      # Serve the project as static HTML
 └── guides/
     ├── foundation/index.html
     ├── athleticism/index.html
