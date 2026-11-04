@@ -27,7 +27,7 @@ I audited the hub and all four current guide HTML files in `main`. The source ch
 
 ## Still needing confirmation or deeper testing
 
-1. **Exercise library:** The four guides still link to `bfit-exercise-movement-library.stormy-lamp-8931.chatgpt.site`, a separately hosted project. This audit did **not** replace its URLs because the future canonical host and every exercise-ID destination have not been verified. Confirm signed-out access and movement variations before migration.
+1. **Exercise library:** The exercise library's older address redirected to `https://bfit-exercise-movement-library.balouissaint.chatgpt.site/` and the final address returned HTTP 200 from the external public-link probe. All 171 literal host references across the four guide files were updated directly to that final host while retaining the original `#BFIT-xxxxx` fragments. **Individual exercise IDs and the library's internal back-links still need signed-out browser checks**, and the library is hosted separately from this GitHub repository.
 2. **Coaching form:** Test the form as a visitor, including confirmation emails and Zapier routing. A working URL does not establish that submissions and enrollment follow-ups work.
 3. **Exercise demonstrations and reference URLs:** Test external videos, approved source labels, and exercise permalinks separately. A successful site build does not verify third-party content.
 4. **Full interaction coverage:** Printing/saving PDF, Athleticism backup import/export, every programming path, every Gamer Fit tool, complex keyboard/screen-reader paths, and different browsers/devices have not all been tested.
