@@ -1,0 +1,20 @@
+# BFit Training Hub — Change Log
+
+## 2026-11-04 — Repository cleanup and link consistency
+
+- Replaced the old `Forbfit` README with setup instructions, an accurate repository map, the current free Pages URL, guide links, and an honest release-check checklist.
+- Refreshed the hub's first-person introduction and added a low-pressure individual-coaching link.
+- Updated all four guides' internal links so Foundation, Athleticism, Gamer Fit, Run Strong, and the hub use `https://vtrackstar.github.io/bfit/` URLs.
+- Added canonical URL metadata to the hub and each guide.
+- Added a sitemap, an accessible not-found page, and `.nojekyll` for straightforward static hosting.
+- Preserved the existing exercise-library links on the separately hosted library; its canonical replacement destination has not been confirmed.
+- Did not intentionally alter exercise programming, workout builders, exercise IDs, training prescriptions, or form destinations.
+
+## Prior repository content
+
+- **2026-11-04:** Initial hub and four interactive guides added to GitHub Pages from the November 2 editorial candidates; later first-person coaching and hub navigation updates.
+- **Before GitHub:** The site and guide sources were developed across separate BFit guide projects. The files currently in this repository are the source for this GitHub Pages site. Older `CURRENT` or editorial handoff copies elsewhere are not automatically synced.
+
+## Release verification boundary
+
+GitHub Actions deployment success confirms a successful deployment of repository files; it does **not** guarantee a full interactive browser test. Check in particular: mobile menus, generated workouts, exported downloads, saved state after reload, first-workout completion, exercise-library links, and external questionnaire links.
