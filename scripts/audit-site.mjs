@@ -22,6 +22,7 @@ for (const [path, html] of pages) {
   if (!/<\/html>\s*$/i.test(html)) add(path, 'missing end tag');
   if (path !== 'index.html' && !html.includes(base)) add(path, 'missing hub link');
   if (/https:\/\/(?:foundation-training-skill-tree|bfit-run-strong|bfit-gamer-fit)\.stormy-lamp-8931\.chatgpt\.site/gi.test(html)) add(path, 'outdated guide host');
+  if (html.includes('bfit-exercise-movement-library.stormy-lamp-8931.chatgpt.site')) add(path, 'old exercise-library host (use bfit-exercise-movement-library.balouissaint.chatgpt.site)');
   const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)];
   scripts.forEach((m,i) => {
     const type = attr(m[1],'type') || 'text/javascript';
