@@ -1,17 +1,22 @@
 # BFit Training Hub — launch audit
 
+## Final social/community status — November 4 update
+
+The hub and all four guides now include links to Instagram (`@_trainwithbfit`), TikTok (`@_trainwithbfit`), Twitch (`gamewithbfit`), and the public [BFit Lounge](https://discord.gg/9yfqjvZPg) on Discord. The public community is distinct from the private Premium/Elite client area. Gamer Fit was successfully retrieved using Git blob access, and now describes both plans. All five pages contain the four link destinations in the repository source. GitHub Pages reported a successful deployment of commit `19e7e813b27cdd58393f1e10bb104271d0c62619`. Third-party account availability, signed-out Discord invite acceptance, and final post-change browser smoke-test results still need independent confirmation.
+
+
 ## Social/community corrections — final source review
 
 The GitHub source for the hub and all four guides includes the supplied Instagram, TikTok, Twitch, and [BFit Lounge Discord](https://discord.gg/9yfqjvZPg) links. BFit Lounge is the public community; Premium and Elite clients have a separate private coaching area. This supersedes earlier statements below that said no invite was available or that all Discord access was private. Gamer Fit was successfully retrieved via its Git blob and edited, superseding older retrieval caveats. A source link check does not prove the external service accepts sign-in-free invites; actual signed-out click tests and the newest GitHub Actions status still need separate confirmation.
 
 ## Social links and Gamer Fit correction — later update
 
-The hub and all four guides now contain clickable links to the Instagram, TikTok, and Twitch account URLs already present in Foundation. Gamer Fit was successfully retrieved through its Git blob and updated; it now explains the Premium and Elite coaching options rather than the older single-plan offer. Discord is described as private coaching-client access, with no publicly posted invite because no verified invite URL was located. These are source-level findings: the platform account pages and Discord access have not been validated in a signed-out user browser. After the HTML commits, GitHub Pages deployment and smoke tests were triggered; inspect the newest workflows for final outcomes.
+The hub and all four guides now contain clickable links to the Instagram, TikTok, and Twitch account URLs already present in Foundation. Gamer Fit was successfully retrieved through its Git blob and updated; it now explains the Premium and Elite coaching options rather than the older single-plan offer. Discord has since been corrected to the public BFit Lounge invitation, with a separate private area for Premium and Elite clients. These are source-level findings: the platform account pages and Discord access have not been validated in a signed-out user browser. After the HTML commits, GitHub Pages deployment and smoke tests were triggered; inspect the newest workflows for final outcomes.
 
 
 ## Coaching correction — later November 4 update
 
-The site has **two** coaching plans, Premium and Elite. The hub, Foundation, Athleticism and Run Strong now present both plans without public pricing. The exact prices, feature allowances, and enrollment automation have **not** been verified against the live questionnaire. Gamer Fit's large HTML file could not be retrieved through the connected GitHub file reader and has not yet been edited. The earlier browser checks predate these content changes; new GitHub Actions results should be inspected before treating them as tested.
+The site has **two** coaching plans, Premium and Elite. The hub, Foundation, Athleticism and Run Strong now present both plans without public pricing. The exact prices, feature allowances, and enrollment automation have **not** been verified against the live questionnaire. Gamer Fit's large HTML file was subsequently retrieved through its Git blob and updated. The earlier browser checks predate these content changes; new GitHub Actions results should be inspected before treating them as tested.
 
 **Date:** November 4, 2026  
 **Site:** https://vtrackstar.github.io/bfit/  
