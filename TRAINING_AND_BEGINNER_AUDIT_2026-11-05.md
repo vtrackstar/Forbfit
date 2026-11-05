@@ -4,6 +4,16 @@
 
 **Method:** Source inspection and a numerical audit of Athleticism's embedded program data. The most recent pre-audit GitHub Actions run passed source, desktop/mobile and key interaction tests. This review did not include human participants, supervised exercise execution, signed-out exercise-library video-by-video checks or physical-phone/screen-reader tests. Avoid treating an editorial audit as clinical or sport-specific clearance.
 
+## Follow-up changes applied on November 5
+
+- **Athleticism readiness (P1):** Added a plainly worded readiness note *before* the program cards and schedule choices. It links to Foundation or the existing first-workout walkthrough. Jump Starter remains an option for prepared athletes, not a substitute for learning a landing.
+- **Athleticism workload metadata (P2):** Reconciled 28 older `iso` values with `isometric_sets`, and 32 older `strength` row values with the sum of lifting plus isometric sets. Updated the associated weekly summaries. Actual prescriptions, exercise IDs, and current visible workload fields were not changed.
+- **Jump Starter consistency:** Chart totals now come from the reduced workout rows instead of a separate fixed array of totals.
+- **Regression coverage:** Added `scripts/audit-program-data.mjs` and `scripts/beginner-entry-flows.mjs` to GitHub Actions. They check numeric summaries, Starter contact accounting, direct first-workout routes, and common Hub return links.
+- **Not replaced by automation:** A few new readers still need to try the site on real devices without help, and exercise-library demonstrations still need individual validation.
+
+The original findings below are retained as an audit trail; the first two issues above have been addressed in source.
+
 ## Executive assessment
 
 **Suitable for a limited soft launch.** Nothing inspected requires replacing the programs or rebuilding the website. The free first-session paths are real rather than placeholders. The main work before promotion is to put athlete-readiness guidance earlier in the Athleticism selection path, correct a legacy workload-metadata inconsistency, and collect beginner feedback. The external exercise-demo mapping remains a separate outstanding verification task.
