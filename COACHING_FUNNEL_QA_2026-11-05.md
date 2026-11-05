@@ -6,10 +6,10 @@
 
 ## Confirmed without submitting an application
 
-The public form opened in headless Chromium from a signed-out session with HTTP 200, no login gate, and the title **BFit Individual Coaching Questionnaire**. The form contained two named options:
+The public form opened in headless Chromium from a signed-out session with HTTP 200, no login gate, and the title **BFit Individual Coaching Questionnaire**. The form contained two named options with monthly pricing displayed there (not duplicated on public website pages):
 
-- **Premium — $199/month:** written check-ins every other week, up to two technique-video submissions per month, initial nutrition-habit support, clarifying messages answered within two business days (Monday–Friday), an onboarding call but no recurring calls.
-- **Elite — $499/month:** weekly check-ins, ongoing nutrition-habit review, messaging replies by the next business day (Monday–Friday), follow-up for missed check-ins, an onboarding call and one monthly progress call up to 45 minutes.
+- **Premium:** written check-ins every other week, up to two technique-video submissions per month, initial nutrition-habit support, clarifying messages answered within two business days (Monday–Friday), an onboarding call but no recurring calls.
+- **Elite:** weekly check-ins, ongoing nutrition-habit review, messaging replies by the next business day (Monday–Friday), follow-up for missed check-ins, an onboarding call and one monthly progress call up to 45 minutes.
 
 A visitor can select **Premium** or **Elite**, and the form visibly offers the alternative of requesting a brief inquiry call before deciding. The hub and all four guides point to this form. Public pages intentionally do not display plan prices.
 
