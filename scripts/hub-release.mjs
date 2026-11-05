@@ -61,6 +61,7 @@ try {
         assert.equal(await page.locator('a[href="#coaching"]').count() > 0, true, 'Coaching must be easy to find from hub nav');
         const metrics = await page.evaluate(() => ({
           overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+          navRows: [...document.querySelectorAll('.site-nav-links a')].map(a=>Math.round(a.getBoundingClientRect().top)),
           lang: document.documentElement.lang,
           title: document.title,
           cards: [...document.querySelectorAll('#guides .card')].map(a => {
@@ -71,6 +72,9 @@ try {
         assert.equal(metrics.lang, 'en');
         assert.match(metrics.title, /BFit Training Hub/);
         assert.ok(metrics.overflow <= 2, 'Unexpected page-wide horizontal overflow: '+metrics.overflow+'px');
+        if (screen.width <= 390) {
+          assert.ok(metrics.navRows.every(y=>y===metrics.navRows[0]), 'Header navigation wraps to multiple rows on phone');
+        }
         for (const card of metrics.cards) {
           assert.ok(card.width > 200 && card.height > 100, 'Unusable guide card size: '+card.name);
           assert.ok(card.left >= -1 && card.right <= screen.width + 1, 'Guide card spills beyond viewport: '+card.name);
