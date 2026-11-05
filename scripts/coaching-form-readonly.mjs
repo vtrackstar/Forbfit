@@ -2,12 +2,12 @@
 // Does not fill in answers, sign in, submit responses, or trigger any automations.
 // Intended to reveal whether visitors can see both plans and their details.
 import { chromium } from 'playwright';
-const URL = 'https://forms.gle/f11PGA7PCUKaxrgq9';
+const FORM_URL = 'https://forms.gle/f11PGA7PCUKaxrgq9';
 let browser;
 try {
   browser = await chromium.launch({headless:true});
   const page = await browser.newPage({viewport:{width:390,height:844},locale:'en-US'});
-  const response = await page.goto(URL,{waitUntil:'domcontentloaded',timeout:35000});
+  const response = await page.goto(FORM_URL,{waitUntil:'domcontentloaded',timeout:35000});
   await page.waitForTimeout(1800);
   const finalUrl = page.url();
   const title = await page.title();
