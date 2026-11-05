@@ -43,6 +43,10 @@ This is the code for the website and the four guides. It's a simple static site 
 
 The exercise library is hosted separately. Some exercises in these guides link out to it.
 
+## Find me outside the guides
+
+I also share training ideas and gaming updates on [Instagram](https://www.instagram.com/_trainwithbfit/), [TikTok](https://www.tiktok.com/@_trainwithbfit), and [Twitch](https://www.twitch.tv/gamewithbfit). Anyone interested in training, gaming, or sports can join the [BFit Lounge on Discord](https://discord.gg/9yfqjvZPg). Premium and Elite clients have a separate private coaching area.
+
 ### Making changes
 
 Most edits can be made directly in the HTML files. Just be careful with the workout builders: the exercise lists, training calculations, and interactive features are part of the page code, not separate files.
