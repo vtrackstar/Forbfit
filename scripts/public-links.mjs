@@ -8,7 +8,11 @@ const urls = [
   ['Gamer Fit', 'https://vtrackstar.github.io/bfit/guides/gamer-fit/'],
   ['Run Strong', 'https://vtrackstar.github.io/bfit/guides/run-strong/'],
   ['Exercise library', 'https://bfit-exercise-movement-library.balouissaint.chatgpt.site/'],
-  ['Coaching inquiry', 'https://forms.gle/f11PGA7PCUKaxrgq9']
+  ['Coaching inquiry', 'https://forms.gle/f11PGA7PCUKaxrgq9'],
+  ['Instagram', 'https://www.instagram.com/_trainwithbfit/'],
+  ['TikTok', 'https://www.tiktok.com/@_trainwithbfit'],
+  ['Twitch', 'https://www.twitch.tv/gamewithbfit'],
+  ['BFit Lounge Discord', 'https://discord.gg/9yfqjvZPg']
 ];
 for (const [name,url] of urls) {
   try {
