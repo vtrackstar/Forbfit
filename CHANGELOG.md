@@ -1,5 +1,13 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-04 — Public BFit Lounge and social-link consistency
+
+- Published the previously supplied [BFit Lounge Discord invitation](https://discord.gg/9yfqjvZPg) alongside Instagram, TikTok, and Twitch on the hub and all four guides.
+- Clarified that BFit Lounge is a public community, while Premium and Elite clients have a separate private coaching area.
+- Updated Foundation's leftover private-only Discord sentence and corrected the README and launch audit.
+- Preserved workout generators, exercise IDs, prescriptions, and the existing coaching inquiry form.
+- All five source files contain all four links; signed-out external click-through and post-change automated browser checks are separate release verifications.
+
 ## 2026-11-04 — Social links across the hub and guides
 
 - Added Instagram (`@_trainwithbfit`), TikTok (`@_trainwithbfit`), and Twitch (`gamewithbfit`) as clickable links on the hub, Foundation, Athleticism, Gamer Fit, and Run Strong.
