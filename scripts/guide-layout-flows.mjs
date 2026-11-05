@@ -38,6 +38,16 @@ try {
    await learn.click();
    assert.ok((await page.locator('#app').innerText()).length>150);
  });
+ await check('Athleticism coaching page links to public Lounge and both coaching tiers',async page=>{
+   await page.goto(host+'/guides/athleticism/',{waitUntil:'domcontentloaded'});
+   await page.locator('.nav-more summary').click();
+   await page.locator('.nav-more-links button[data-to="coaching"]').click();
+   const content=await page.locator('#app').innerText();
+   assert.match(content,/Premium/);
+   assert.match(content,/Elite/);
+   assert.equal(await page.locator('#app a[href="https://discord.gg/9yfqjvZPg"]').count(),1);
+   assert.equal(await page.locator('#app a[href="https://forms.gle/f11PGA7PCUKaxrgq9"]').count(),1);
+ });
  await check('Gamer Fit has a compact header and a functional contents drawer',async page=>{
    await page.goto(host+'/guides/gamer-fit/',{waitUntil:'domcontentloaded'});
    assert.equal((await page.locator('.topbar-title').innerText()).trim(),'Gamer Fit');
