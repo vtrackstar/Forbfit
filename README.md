@@ -19,7 +19,7 @@ You don't have to read everything in order. Find the guide that matches what you
 
 I'm a strength and conditioning coach, and I like helping people understand *why* they're doing something instead of just handing them a list of exercises.
 
-The guides are free. If you'd rather have me build a plan around your goals, review your training, and make adjustments as you go, you can [ask about individual coaching here](https://forms.gle/f11PGA7PCUKaxrgq9). The form explains what's included and the pricing. Filling it out doesn't commit you to anything.
+The guides are free. For individual coaching, I offer two options: **Premium** for personalized programming with a lighter feedback schedule, and **Elite** for people who want more frequent reviews and support. You can [compare the plans in the coaching questionnaire](https://forms.gle/f11PGA7PCUKaxrgq9); that's where I keep current pricing and full inclusions. Filling it out doesn't commit you to anything.
 
 ## What's in this repo?
 
