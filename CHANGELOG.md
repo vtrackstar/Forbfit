@@ -1,5 +1,16 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-05 — Hub-first visual hierarchy and guide navigation polish
+
+- Kept BFit's existing navy, cream, green, and blue guide palettes. Updated the hub's visual hierarchy rather than redesigning it.
+- Emphasized Foundation as a starting option, clarified all four card outcomes, reduced intro spacing on mobile, and made Exercise Help easier to find.
+- Split the hub's coaching section into Premium and Elite summaries with one prominent questionnaire button and a clearly labeled illustrative coaching check-in (not a client testimonial).
+- Moved Foundation's reset action into an accessible Options menu, simplified Athleticism's small-screen nav and saved-progress wording, shortened Gamer Fit's topbar label and initial hero spacing, and tucked Run Strong's Download/Print tools into a secondary menu.
+- Standardized the coaching-link language across all guides. Corrected an old Athleticism in-app statement: BFit Lounge is public, while coaching clients have a separate private area.
+- Added guide-layout mobile interaction tests and updated the Run Strong download test to account for its menu. Hub responsive, keyboard, accessibility, and guide-entry tests continue to run in GitHub Actions.
+- **Not changed:** training programs, exercise IDs, workout calculations, published prices (still shown only in the questionnaire), and individual guide color systems.
+
+
 ## 2026-11-04 — BFit Lounge invitation correction
 
 - Added the BFit Lounge public invitation (`https://discord.gg/9yfqjvZPg`) to the hub and all four guides.
