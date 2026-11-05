@@ -1,5 +1,9 @@
 # BFit Training Hub — launch audit
 
+## Social/community corrections — final source review
+
+The GitHub source for the hub and all four guides includes the supplied Instagram, TikTok, Twitch, and [BFit Lounge Discord](https://discord.gg/9yfqjvZPg) links. BFit Lounge is the public community; Premium and Elite clients have a separate private coaching area. This supersedes earlier statements below that said no invite was available or that all Discord access was private. Gamer Fit was successfully retrieved via its Git blob and edited, superseding older retrieval caveats. A source link check does not prove the external service accepts sign-in-free invites; actual signed-out click tests and the newest GitHub Actions status still need separate confirmation.
+
 ## Social links and Gamer Fit correction — later update
 
 The hub and all four guides now contain clickable links to the Instagram, TikTok, and Twitch account URLs already present in Foundation. Gamer Fit was successfully retrieved through its Git blob and updated; it now explains the Premium and Elite coaching options rather than the older single-plan offer. Discord is described as private coaching-client access, with no publicly posted invite because no verified invite URL was located. These are source-level findings: the platform account pages and Discord access have not been validated in a signed-out user browser. After the HTML commits, GitHub Pages deployment and smoke tests were triggered; inspect the newest workflows for final outcomes.
