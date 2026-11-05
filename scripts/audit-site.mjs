@@ -32,6 +32,10 @@ for (const [path, html] of pages) {
   }
   if (/Discord access is shared privately with coaching clients/i.test(html))
     add(path, 'outdated private-only Discord wording');
+  if (/Individual Coaching and Individual Coaching/i.test(html))
+    add(path, 'outdated duplicated coaching name');
+  if (!/\bPremium\b/.test(html) || !/\bElite\b/.test(html))
+    add(path, 'missing current Premium/Elite plan names');
 
   if (/https:\/\/(?:foundation-training-skill-tree|bfit-run-strong|bfit-gamer-fit)\.stormy-lamp-8931\.chatgpt\.site/gi.test(html)) add(path, 'outdated guide host');
   if (html.includes('bfit-exercise-movement-library.stormy-lamp-8931.chatgpt.site')) add(path, 'old exercise-library host (use bfit-exercise-movement-library.balouissaint.chatgpt.site)');
