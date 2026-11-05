@@ -1,5 +1,14 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-04 — Social links across the hub and guides
+
+- Added Instagram (`@_trainwithbfit`), TikTok (`@_trainwithbfit`), and Twitch (`gamewithbfit`) as clickable links on the hub, Foundation, Athleticism, Gamer Fit, and Run Strong.
+- Made the links easier to find: a Connect section on the hub, guide coaching/footer links, and a Foundation sidebar shortcut.
+- Clarified that Discord is for coaching clients and its invitation is shared privately during onboarding; no invite URL was published because none was found in the repository.
+- Replaced Gamer Fit's outdated single-coaching-plan copy with Premium and Elite; programming and workbook logic were not intentionally changed.
+- Checked that each of the five HTML sources contains all three profile destinations. External account availability and live mobile rendering still require verification.
+
+
 ## 2026-11-04 — Premium and Elite coaching wording
 
 - Updated the hub, Foundation, Athleticism, and Run Strong to identify two coaching plans: Premium and Elite.
