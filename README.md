@@ -21,6 +21,14 @@ I'm a strength and conditioning coach, and I like helping people understand *why
 
 The guides are free. For individual coaching, I offer two options: **Premium** for personalized programming with a lighter feedback schedule, and **Elite** for people who want more frequent reviews and support. You can [compare the plans in the coaching questionnaire](https://forms.gle/f11PGA7PCUKaxrgq9); that's where I keep current pricing and full inclusions. Filling it out doesn't commit you to anything.
 
+## Find me online
+
+- [Instagram](https://www.instagram.com/_trainwithbfit/) — @_trainwithbfit
+- [TikTok](https://www.tiktok.com/@_trainwithbfit) — @_trainwithbfit
+- [Twitch](https://www.twitch.tv/gamewithbfit) — gamewithbfit
+
+I share Discord access privately with coaching clients during onboarding, rather than posting an invitation link here.
+
 ## What's in this repo?
 
 This is the code for the website and the four guides. It's a simple static site hosted through GitHub Pages, so there's no separate app or server to run.
