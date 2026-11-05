@@ -1,0 +1,64 @@
+// First-visit checks of the BFit guide paths and consistent Hub navigation.
+// Uses fresh temporary local-browser contexts; no coaching submissions or user records.
+import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+const host='http://127.0.0.1:8791';
+const server=spawn('python3',['-m','http.server','8791','--bind','127.0.0.1'],{stdio:'ignore'});
+const sleep=ms=>new Promise(done=>setTimeout(done,ms));
+let browser;
+const errors=[];
+async function ready(){for(let i=0;i<60;i++){try{if((await fetch(host+'/')).ok)return}catch{}await sleep(200)}throw Error('Local site server unavailable')}
+async function check(name,fn,width=390){
+ const page=await browser.newPage({viewport:{width,height:844}});
+ const pageErrors=[];page.on('pageerror',error=>pageErrors.push(error.message));
+ try {await fn(page);assert.deepEqual(pageErrors,[]);console.log('PASS '+name)}
+ catch(e){errors.push(name+': '+e.message);console.error('FAIL '+name+': '+e.message)}
+ finally{await page.close()}
+}
+const paths=['foundation','athleticism','gamer-fit','run-strong'];
+try{
+ await ready();browser=await chromium.launch({headless:true});
+ await check('Hub shows four distinct guide choices and a separate exercise library',async p=>{
+  await p.goto(host+'/',{waitUntil:'domcontentloaded'});
+  for(const guide of paths)assert.equal(await p.locator('a.card[href="guides/'+guide+'/"]').count(),1);
+  assert.match(await p.locator('.library-cta').innerText(),/Exercise Library/i);
+ });
+ await check('Every guide exposes one clearly labeled Hub return',async p=>{
+  for(const guide of paths){
+   await p.goto(host+'/guides/'+guide+'/',{waitUntil:'domcontentloaded'});
+   const link=p.locator('header .bfit-hub-link, .topbar .bfit-hub-link').first();
+   assert.equal(await link.count(),1,guide+': missing header Hub link');
+   assert.equal((await link.innerText()).trim(),'BFit Hub',guide+': wrong Hub label');
+   assert.equal(await link.getAttribute('href'),'https://vtrackstar.github.io/bfit/');
+   assert.ok((await link.boundingBox())?.height>=44,guide+': Hub touch target under 44px');
+  }
+ });
+ await check('Athleticism advises new athletes before the schedule choices',async p=>{
+  await p.goto(host+'/guides/athleticism/',{waitUntil:'domcontentloaded'});
+  await p.locator('.home-three [data-action="nav"][data-to="build"]').click();
+  const note=p.locator('#app .bfit-readiness');
+  assert.equal(await note.isVisible(),true);
+  assert.match(await note.innerText(),/New to sprinting or jumping/);
+  assert.match(await note.innerText(),/Starter/);
+  await note.locator('button[data-action="lesson"][data-lesson="getting"]').click();
+  assert.match(await p.locator('#app').innerText(),/Your first workout, start to finish/);
+ });
+ await check('Gamer Fit makes its short first workout easy to reach',async p=>{
+  await p.goto(host+'/guides/gamer-fit/',{waitUntil:'domcontentloaded'});
+  const start=p.locator('#guide-entry-choices a[href="#first-workout"]');
+  assert.equal(await start.count(),1);
+  await start.click();
+  assert.match(await p.locator('#first-workout').innerText(),/Start here: do this workout today/);
+  assert.match(await p.locator('#first-workout').innerText(),/one set/i);
+ });
+ await check('Run Strong first session is separate from faster-running examples',async p=>{
+  await p.goto(host+'/guides/run-strong/',{waitUntil:'domcontentloaded'});
+  assert.match(await p.locator('#first-run').innerText(),/20 minutes/);
+  assert.match(await p.locator('#first-run').innerText(),/30 sec easy run/i);
+  assert.match(await p.locator('#ten-minute-runner').innerText(),/10 minutes/i);
+ });
+} catch(e){errors.push('runner: '+e.message)}
+finally{if(browser)await browser.close();server.kill()}
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
+else console.log('PASS first-time routes, Hub navigation, readiness, and beginner workout entry points');
