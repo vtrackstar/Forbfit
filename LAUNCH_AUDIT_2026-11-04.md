@@ -1,5 +1,10 @@
 # BFit Training Hub — launch audit
 
+## Social links and Gamer Fit correction — later update
+
+The hub and all four guides now contain clickable links to the Instagram, TikTok, and Twitch account URLs already present in Foundation. Gamer Fit was successfully retrieved through its Git blob and updated; it now explains the Premium and Elite coaching options rather than the older single-plan offer. Discord is described as private coaching-client access, with no publicly posted invite because no verified invite URL was located. These are source-level findings: the platform account pages and Discord access have not been validated in a signed-out user browser. After the HTML commits, GitHub Pages deployment and smoke tests were triggered; inspect the newest workflows for final outcomes.
+
+
 ## Coaching correction — later November 4 update
 
 The site has **two** coaching plans, Premium and Elite. The hub, Foundation, Athleticism and Run Strong now present both plans without public pricing. The exact prices, feature allowances, and enrollment automation have **not** been verified against the live questionnaire. Gamer Fit's large HTML file could not be retrieved through the connected GitHub file reader and has not yet been edited. The earlier browser checks predate these content changes; new GitHub Actions results should be inspected before treating them as tested.
