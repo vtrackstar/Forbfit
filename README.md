@@ -27,7 +27,7 @@ The guides are free. For individual coaching, I offer two options: **Premium** f
 - [TikTok](https://www.tiktok.com/@_trainwithbfit) — @_trainwithbfit
 - [Twitch](https://www.twitch.tv/gamewithbfit) — gamewithbfit
 
-I share Discord access privately with coaching clients during onboarding, rather than posting an invitation link here.
+You can also [join the BFit Lounge on Discord](https://discord.gg/9yfqjvZPg) to talk about training, sports, gaming, and everyday life. The Lounge is a community space; Premium and Elite clients have access to a separate private coaching area.
 
 ## What's in this repo?
 
