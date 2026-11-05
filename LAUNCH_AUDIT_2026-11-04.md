@@ -1,4 +1,9 @@
 # BFit Training Hub — launch audit
+
+## Coaching correction — later November 4 update
+
+The site has **two** coaching plans, Premium and Elite. The hub, Foundation, Athleticism and Run Strong now present both plans without public pricing. The exact prices, feature allowances, and enrollment automation have **not** been verified against the live questionnaire. Gamer Fit's large HTML file could not be retrieved through the connected GitHub file reader and has not yet been edited. The earlier browser checks predate these content changes; new GitHub Actions results should be inspected before treating them as tested.
+
 **Date:** November 4, 2026  
 **Site:** https://vtrackstar.github.io/bfit/  
 **Source:** https://github.com/vtrackstar/bfit
