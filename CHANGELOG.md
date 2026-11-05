@@ -1,5 +1,14 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-05 — Training-audit fixes and beginner-path checks
+
+- Added a short readiness note to Athleticism before the plan-selection cards. It links back to Foundation and to the guide's first-workout walkthrough; the Jump Starter option still requires basic landing preparation.
+- Cleaned up old workload fields in the Athleticism data: the isometric and overall strength fields now agree with the separate lifting/isometric set counts. No exercises, sets, reps, distances, or training days were changed.
+- Made Jump Starter's weekly chart totals use the actual reduced workout rows rather than another list of numbers.
+- Added automated program-total checks and first-visitor navigation tests to the normal GitHub Actions run.
+- Still needs real-device beginner feedback and a separate check of the external exercise demonstration links.
+
+
 ## 2026-11-05 — Cross-guide design consistency pass
 
 - Preserved distinct guide palettes and page layouts; this change is navigation and UI polish, not a redesign.
