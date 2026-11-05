@@ -1,5 +1,9 @@
 # BFit Training Hub — launch audit
 
+## November 5: coaching-funnel read-only verification
+
+The public coaching questionnaire was opened in signed-out Chromium and confirmed to show **Premium ($199/month)** and **Elite ($499/month)**, along with the option to request an inquiry call. This resolves the earlier question of whether the public questionnaire reflects both plans. The form submission, Google response capture, Zapier routing, and follow-up emails remain untested. See [Coaching Funnel QA](COACHING_FUNNEL_QA_2026-11-05.md) for confirmed evidence and the remaining manual steps. The hub's fuller automated browser and accessibility checks passed in the November 5 CI run.
+
 ## Final social/community status — November 4 update
 
 The hub and all four guides now include links to Instagram (`@_trainwithbfit`), TikTok (`@_trainwithbfit`), Twitch (`gamewithbfit`), and the public [BFit Lounge](https://discord.gg/9yfqjvZPg) on Discord. The public community is distinct from the private Premium/Elite client area. Gamer Fit was successfully retrieved using Git blob access, and now describes both plans. All five pages contain the four link destinations in the repository source. GitHub Pages reported a successful deployment of commit `19e7e813b27cdd58393f1e10bb104271d0c62619`. Third-party account availability, signed-out Discord invite acceptance, and final post-change browser smoke-test results still need independent confirmation.
