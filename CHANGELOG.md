@@ -1,5 +1,15 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-05 — Cross-guide design consistency pass
+
+- Preserved distinct guide palettes and page layouts; this change is navigation and UI polish, not a redesign.
+- Added an explicit **BFit Hub** link in the visible header of Foundation, Athleticism, Gamer Fit, and Run Strong. Their local guide-home or Start actions still operate inside their guide.
+- Distinguished internal exercise indexes (**In-guide exercises**) from the separate **Exercise Library** destination on the hub and in Run Strong.
+- Added consistent minimum 44px touch targets and keyboard-focus affordances for the new Hub links, adapted to each guide's own palette and mobile breakpoint.
+- Kept workout engines, program data, exercise IDs, storage keys, coaching form, and third-party community destinations unchanged.
+- Remaining design review: verify real narrow-phone header spacing and screen-reader behavior; use GitHub smoke tests as regression evidence, not a substitute for manual QA.
+
+
 ## 2026-11-05 — Hub-first visual hierarchy and guide navigation polish
 
 - Kept BFit's existing navy, cream, green, and blue guide palettes. Updated the hub's visual hierarchy rather than redesigning it.
