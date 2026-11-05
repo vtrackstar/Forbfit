@@ -22,8 +22,8 @@ try {
     premiumVisible:/\bPremium\b/i.test(text),
     eliteVisible:/\bElite\b/i.test(text),
     signInObstacle:/sign in to continue|you need permission|request access|you must sign in|access denied|form is no longer accepting responses/i.test(text),
-    pricingMentions:[...new Set(text.match(/\$\s?\d{2,4}(?:\/month|\/mo| a month)?/gi)||[])].slice(0,10),
-    publicPlanLines:hints
+    monthlyPricesPresent:/\$\s?\d{2,4}\s*\/\s*month/i.test(text),
+    publicPlanLines:hints.map(line=>line.replace(/\$\s?\d{2,4}(?:\/month|\/mo| a month)?/gi,'[pricing shown in form]'))
   };
   console.log('COACHING FORM READ-ONLY FINDINGS (publicly visible text; no submission)');
   console.log(JSON.stringify(observed,null,2));
