@@ -22,10 +22,12 @@ jobs:
         run: node scripts/audit-site.mjs
       - name: Install headless browser
         run: |
-          npm install --no-save playwright
+          npm install --no-save playwright @axe-core/playwright
           npx playwright install --with-deps chromium
       - name: Check desktop and mobile page loads
         run: node scripts/browser-smoke.mjs
+      - name: Test hub release readiness (responsive, navigation, keyboard, accessibility)
+        run: node scripts/hub-release.mjs
       - name: Test workout setup, browser saving and downloads
         run: node scripts/core-flows.mjs
       - name: Check public guide, exercise library and inquiry URLs
