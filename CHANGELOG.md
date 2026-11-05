@@ -1,5 +1,14 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-05 — Return to all guides while reading
+
+- Foundation and Athleticism now show a small **All guides** link throughout reading or workout sessions, including on a narrow phone. It returns to the main BFit Hub, where readers can switch guides without finishing the current one.
+- Existing Hub links remain in every guide's header. Gamer Fit and Run Strong already use sticky headers, so they did not need an additional floating control.
+- In Athleticism, the new link sits opposite the existing in-guide Back control; **Back** still changes screens within Athleticism, while **All guides** goes to the Hub.
+- Added a mobile-browser regression check for the new links, including touch target size and avoiding overlap with the Athleticism Back button.
+- No workout prescriptions, progress data, exercise IDs, or coaching links changed.
+
+
 ## 2026-11-05 — Training-audit fixes and beginner-path checks
 
 - Added a short readiness note to Athleticism before the plan-selection cards. It links back to Foundation and to the guide's first-workout walkthrough; the Jump Starter option still requires basic landing preparation.
