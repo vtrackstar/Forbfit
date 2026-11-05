@@ -58,6 +58,8 @@ try {
  });
  await test('Run Strong download offline guide',async page=>{
    await page.goto(host+'/guides/run-strong/',{waitUntil:'domcontentloaded'});
+   await page.locator('.top-tools > summary').click();
+   assert.equal(await page.locator('a[download="BFit_Run_Strong_Guide.html"]').isVisible(),true);
    const downloadPromise=page.waitForEvent('download',{timeout:15000});
    await page.locator('a[download="BFit_Run_Strong_Guide.html"]').click();
    const download=await downloadPromise;
