@@ -41,6 +41,14 @@ p{color:#c0cbd0;max-width:680px}.eyebrow{color:#a3d3a0;font-weight:700;letter-sp
 nav a:focus-visible,.card:focus-visible,.about a:focus-visible,.library-link a:focus-visible{outline:3px solid #a7e3aa;outline-offset:4px}
 @media(max-width:600px){nav{flex-direction:column;align-items:flex-start;gap:10px}.site-nav-links{gap:16px}.site-nav-links a{min-height:44px}.connect,.about{padding:22px}}
 @media(max-width:350px){.site-nav-links{width:100%;gap:6px;flex-wrap:nowrap;justify-content:space-between}.site-nav-links a{font-size:13px;white-space:nowrap}.connect-links a{width:100%;justify-content:center}}
+
+.upcoming{margin-top:38px}.upcoming h2{margin-bottom:8px}.upcoming>p{margin:0 0 18px}
+.card--coming{appearance:none;width:100%;font:inherit;text-align:left;color:#f7f7f4;cursor:not-allowed;background:#17232b;border:1px dashed #657179;opacity:1}
+.card--coming:hover,.card--coming:focus-visible{background:#17232b;border-color:#657179;outline:none}
+.card--coming .eyebrow{color:#b9c6ca}
+.card--coming .coming-title{font-size:1.55rem;line-height:1.2;letter-spacing:-.025em;font-weight:700;margin:8px 0}
+.card--coming .coming-description{color:#c0cbd0;flex:1}
+.card--coming .card-action{color:#c8d6d9}.card--coming .card-action::after{content:none}
 </style></head>
 <body><main><nav><strong>BFit Training Hub</strong><div class="site-nav-links"><a href="#guides">Explore guides</a><a href="#coaching">Coaching</a><a href="#connect">Connect</a></div></nav>
 <header><div class="eyebrow">Train with BFit</div><h1>Find your way<br>to better training.</h1><p>I made these free guides so you can choose a workout that fits your goals, then learn the why behind it as you go. Pick where you want to start.</p></header>
@@ -49,7 +57,26 @@ nav a:focus-visible,.card:focus-visible,.about a:focus-visible,.library-link a:f
 <a class="card" href="guides/athleticism/"><div class="eyebrow">For sport and movement</div><h2>Athleticism</h2><p>Choose a four-week program for sprinting, jumping, field and court sports, or a mix.</p><span class="card-action">Explore training programs</span></a>
 <a class="card" href="guides/gamer-fit/"><div class="eyebrow">For gaming and screen time</div><h2>Gamer Fit</h2><p>Start with a no-equipment workout or explore habits for more movement and energy.</p><span class="card-action">Start a workout</span></a>
 <a class="card" href="guides/run-strong/"><div class="eyebrow">For runners</div><h2>Run Strong</h2><p>Try a first running session and learn how to structure your week and build consistency.</p><span class="card-action">Find a running session</span></a>
-</div><div class="library-link"><span>Need a demonstration or setup cues?</span><a class="library-cta" href="https://bfit-exercise-movement-library.balouissaint.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open Exercise Library ↗</a></div></section>
+</div>
+<section class="upcoming" aria-labelledby="upcoming-title">
+<h2 id="upcoming-title">Follow a program</h2>
+<p>Have a specific milestone or training goal? More focused programs are on the way.</p>
+<div class="cards">
+<button class="card card--coming" type="button" disabled aria-label="Your First… — Coming Soon">
+<span class="eyebrow">Milestone programs</span>
+<span class="coming-title">Your First…</span>
+<span class="coming-description">Step-by-step plans for your first push-up, pull-up, pistol squat, or 5K.</span>
+<span class="card-action">Coming Soon</span>
+</button>
+<button class="card card--coming" type="button" disabled aria-label="Specialty Programs — Coming Soon">
+<span class="eyebrow">Focused training programs</span>
+<span class="coming-title">Specialty Programs</span>
+<span class="coming-description">Targeted programs for building strength, muscle, conditioning, and other specific goals.</span>
+<span class="card-action">Coming Soon</span>
+</button>
+</div>
+</section>
+<div class="library-link"><span>Need a demonstration or setup cues?</span><a class="library-cta" href="https://bfit-exercise-movement-library.balouissaint.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open Exercise Library ↗</a></div></section>
 <section class="about" id="coaching" aria-labelledby="coaching-title"><h2 id="coaching-title">Want a plan built around you?</h2><p>I start with your goals, schedule and training history. I use the sessions you actually complete and your feedback to decide what needs adjusting.</p><div class="offer-grid"><div class="offer-card"><h3>Premium</h3><p>Individualized programming with a lighter check-in and feedback schedule.</p></div><div class="offer-card"><h3>Elite</h3><p>Individualized programming with more frequent reviews, feedback and support.</p></div></div><a class="coaching-cta" href="https://forms.gle/f11PGA7PCUKaxrgq9" target="_blank" rel="noopener noreferrer">See coaching options &amp; prices ↗</a><p class="coaching-note">You can see what each plan includes and costs before deciding whether to reach out. No commitment.</p><div class="sample-checkin"><strong>What working with me can look like</strong><p>“You completed two of three planned sessions. I’d shorten the next week's third session instead of trying to squeeze in everything you missed.”</p><small>Illustrative coaching example, not a client testimonial.</small></div></section>
 <section class="connect" id="connect" aria-labelledby="connect-title"><h2 id="connect-title">See what I’m up to</h2><p>I share training ideas, updates, and some gaming outside the gym.</p><div class="connect-links"><a href="https://www.instagram.com/_trainwithbfit/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@_trainwithbfit" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.twitch.tv/gamewithbfit" target="_blank" rel="noopener noreferrer">Twitch ↗</a><a href="https://discord.gg/9yfqjvZPg" target="_blank" rel="noopener noreferrer">BFit Lounge on Discord ↗</a></div><p class="small-note">The BFit Lounge is free to join if you want to talk training, sports, or gaming. Paid coaching is different: I build your workouts, review your progress, and make changes based on how things are going. Coaching clients also have a private area.</p></section>
 <footer class="foot"><strong>BFit Training Hub</strong><p>Free guides for strength, athleticism, running and gaming fitness. Train with purpose, and keep what works for you.</p></footer>
