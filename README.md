@@ -19,7 +19,7 @@ If you need an exercise setup or technique cue, the [BFit Exercise & Movement Li
 
 I also offer two remote coaching options. **Premium** is for personalized programming with a lighter feedback schedule; **Elite** is for people who want more frequent reviews and support.
 
-You can [compare both options in my coaching questionnaire](https://forms.gle/f11PGA7PCUKaxrgq9). It includes the current pricing and full details. Filling it out doesn't commit you to anything.
+You can [see the coaching options and prices here](https://forms.gle/f11PGA7PCUKaxrgq9). You can read through everything before deciding whether to reach out.
 
 ## Connect with BFit
 
@@ -28,7 +28,7 @@ You can [compare both options in my coaching questionnaire](https://forms.gle/f1
 - [Twitch — gamewithbfit](https://www.twitch.tv/gamewithbfit)
 - [Discord — BFit Lounge](https://discord.gg/9yfqjvZPg)
 
-The BFit Lounge is open to anyone who wants to talk about training, sports, gaming, and community. Premium and Elite clients also have a separate private coaching area.
+The BFit Lounge is free to join for conversations about training, sports, and gaming. Paid coaching is where I build your plan, review how it's going, and make changes with you. Coaching clients also have a private area.
 
 ---
 
