@@ -10,6 +10,8 @@ const data = JSON.parse(match[1]);
 const programs = ['sprint','field','jump','multi'];
 const loads = ['contacts','pogo','running','brakes','cuts','react','strength','iso','aerobic','throws','lifting_sets','isometric_sets'];
 const problems = [];
+if (JSON.stringify(data.editorial||{}).includes('Individual Coaching')) problems.push('Outdated legacy coaching names in program metadata');
+if (JSON.stringify(data.editorial?.coachingPlans||[]) !== JSON.stringify(['Premium','Elite'])) problems.push('Coaching metadata should name Premium and Elite');
 const flag = (s) => problems.push(s);
 let weeksChecked = 0, rowsChecked = 0;
 assert.equal(data.summary.length, 32, 'Four programs x two schedules x four weeks');
