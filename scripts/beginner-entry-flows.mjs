@@ -34,6 +34,41 @@ try{
    assert.ok((await link.boundingBox())?.height>=44,guide+': Hub touch target under 44px');
   }
  });
+ await check('Reader can reach all guides halfway through Foundation and Athleticism on a narrow phone',async p=>{
+  await p.setViewportSize({width:320,height:700});
+  for(const guide of ['foundation','athleticism']){
+   await p.goto(host+'/guides/'+guide+'/',{waitUntil:'domcontentloaded'});
+   if(guide==='athleticism'){
+    await p.locator('.home-three [data-action="nav"][data-to="build"]').click();
+   }
+   await p.evaluate(()=>{
+    window.scrollTo(0,800);
+    const main=document.querySelector('#main, #app');
+    if(main) main.scrollTop=800;
+   });
+   const link=p.locator('.bfit-guide-switch');
+   assert.equal(await link.isVisible(),true,guide+': All guides link should be visible');
+   assert.match(await link.innerText(),/All guides/);
+   assert.equal(await link.getAttribute('href'),'https://vtrackstar.github.io/bfit/');
+   assert.equal(await link.evaluate(el=>getComputedStyle(el).position),'fixed');
+   const box=await link.boundingBox();
+   assert.ok(box&&box.height>=44&&box.x>=0&&box.x+box.width<=321&&box.y>=0&&box.y+box.height<=701,guide+': link outside phone viewport');
+   if(guide==='athleticism'&&await p.locator('#floating-back').isVisible()){
+    const back=await p.locator('#floating-back').boundingBox();
+    assert.ok(!back || back.x+back.width<=box.x-5, 'Athleticism local Back and All guides must not overlap');
+   }
+  }
+ },320);
+ await check('Gamer Fit and Run Strong preserve Hub access while reading',async p=>{
+  for(const guide of ['gamer-fit','run-strong']){
+   await p.goto(host+'/guides/'+guide+'/',{waitUntil:'domcontentloaded'});
+   const header=p.locator('.topbar').first();
+   assert.equal(await header.evaluate(el=>getComputedStyle(el).position),'sticky',guide+': top navigation should remain visible');
+   await p.evaluate(()=>window.scrollTo(0,1200));
+   const link=p.locator('.topbar .bfit-hub-link');
+   assert.equal(await link.isVisible(),true,guide+': Hub link should remain visible');
+  }
+ });
  await check('Athleticism advises new athletes before the schedule choices',async p=>{
   await p.goto(host+'/guides/athleticism/',{waitUntil:'domcontentloaded'});
   await p.locator('.home-three [data-action="nav"][data-to="build"]').click();
