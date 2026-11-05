@@ -1,5 +1,14 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-04 — Premium and Elite coaching wording
+
+- Updated the hub, Foundation, Athleticism, and Run Strong to identify two coaching plans: Premium and Elite.
+- Removed single-plan claims and kept pricing off public pages; the questionnaire remains the destination for current terms.
+- Left programming, workout builder logic, export functions, and exercise IDs intact.
+- Gamer Fit still requires direct content inspection because the GitHub connector returned empty file content; its coaching copy was not changed in this pass.
+- The Google Form's actual plan descriptions and its email/Zapier follow-up were not accessible for verification.
+
+
 ## 2026-11-04 — Launch audit and testing
 
 - Fixed Foundation's placeholder logo navigation.
