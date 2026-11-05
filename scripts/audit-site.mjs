@@ -21,6 +21,18 @@ for (const [path, html] of pages) {
   if (!html.includes('<link rel="canonical" href="' + expected + '">')) add(path, 'missing or wrong canonical');
   if (!/<\/html>\s*$/i.test(html)) add(path, 'missing end tag');
   if (path !== 'index.html' && !html.includes(base)) add(path, 'missing hub link');
+  for (const required of [
+    'https://www.instagram.com/_trainwithbfit/',
+    'https://www.tiktok.com/@_trainwithbfit',
+    'https://www.twitch.tv/gamewithbfit',
+    'https://discord.gg/9yfqjvZPg',
+    'https://forms.gle/f11PGA7PCUKaxrgq9'
+  ]) {
+    if (!html.includes(required)) add(path, 'missing shared social, community or coaching destination: '+required);
+  }
+  if (/Discord access is shared privately with coaching clients/i.test(html))
+    add(path, 'outdated private-only Discord wording');
+
   if (/https:\/\/(?:foundation-training-skill-tree|bfit-run-strong|bfit-gamer-fit)\.stormy-lamp-8931\.chatgpt\.site/gi.test(html)) add(path, 'outdated guide host');
   if (html.includes('bfit-exercise-movement-library.stormy-lamp-8931.chatgpt.site')) add(path, 'old exercise-library host (use bfit-exercise-movement-library.balouissaint.chatgpt.site)');
   const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)];
