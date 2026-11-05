@@ -15,8 +15,12 @@ p{color:#c0cbd0;max-width:680px}.eyebrow{color:#a3d3a0;font-weight:700;letter-sp
 @media(max-width:680px){.cards{grid-template-columns:1fr}header{padding-top:42px}.card{min-height:unset}}
 
 .site-nav-links{display:flex;gap:18px;flex-wrap:wrap}.connect{margin-top:24px;padding:28px;border:1px solid #35444c;border-radius:18px;background:#16222b}.connect h2{margin:0 0 12px}.connect-links{display:flex;flex-wrap:wrap;gap:10px}.connect-links a{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #49645d;border-radius:10px;color:#a7e3aa;text-decoration:none}.connect-links a:hover,.connect-links a:focus-visible{background:#253745;outline-offset:3px}.connect p{margin:10px 0}.connect .small-note{font-size:.9rem;color:#c0cbd0}
+.site-nav-links a{min-height:44px;display:inline-flex;align-items:center}
+nav a:focus-visible,.card:focus-visible,.about a:focus-visible,.library-link a:focus-visible{outline:3px solid #a7e3aa;outline-offset:4px}
+@media(max-width:600px){nav{flex-direction:column;align-items:flex-start;gap:10px}.site-nav-links{gap:16px}.site-nav-links a{min-height:44px}.connect,.about{padding:22px}}
+@media(max-width:350px){.site-nav-links{column-gap:12px;row-gap:0}.connect-links a{width:100%;justify-content:center}}
 </style></head>
-<body><main><nav><strong>BFit Training Hub</strong><div class="site-nav-links"><a href="#guides">Explore guides</a><a href="#connect">Connect</a></div></nav>
+<body><main><nav><strong>BFit Training Hub</strong><div class="site-nav-links"><a href="#guides">Explore guides</a><a href="#coaching">Coaching</a><a href="#connect">Connect</a></div></nav>
 <header><div class="eyebrow">Train with BFit</div><h1>Find your way<br>to better training.</h1><p>I made these free guides to help you understand your training and find a realistic place to start. Pick a guide, try a workout, and come back when you want to learn more.</p></header>
 <section id="guides" aria-label="Training guides"><h2>Choose a guide</h2><div class="cards">
 <a class="card" href="guides/foundation/"><div class="eyebrow">Start here</div><h2>Foundation Training</h2><p>Build a sustainable strength-training routine around your goals, time and equipment.</p><span class="arrow">Explore guide →</span></a>
