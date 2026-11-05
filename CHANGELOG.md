@@ -1,5 +1,13 @@
 # BFit Training Hub — Change Log
 
+## 2026-11-04 — BFit Lounge invitation correction
+
+- Added the BFit Lounge public invitation (`https://discord.gg/9yfqjvZPg`) to the hub and all four guides.
+- Corrected earlier wording: the BFit Lounge is an open community; Premium and Elite coaching clients have a separate private client area.
+- Confirmed all five repository HTML files contain clickable Instagram, TikTok, Twitch, and Discord links.
+- Gamer Fit's large source was retrieved through GitHub blob access and its two-plan coaching copy was corrected.
+- GitHub Pages published the current five-page commit successfully. The final smoke-test run was still in progress at the time of this note; external profile availability and signed-out Discord joining are not yet independently verified.
+
 ## 2026-11-04 — Public BFit Lounge and social-link consistency
 
 - Published the previously supplied [BFit Lounge Discord invitation](https://discord.gg/9yfqjvZPg) alongside Instagram, TikTok, and Twitch on the hub and all four guides.
@@ -12,7 +20,7 @@
 
 - Added Instagram (`@_trainwithbfit`), TikTok (`@_trainwithbfit`), and Twitch (`gamewithbfit`) as clickable links on the hub, Foundation, Athleticism, Gamer Fit, and Run Strong.
 - Made the links easier to find: a Connect section on the hub, guide coaching/footer links, and a Foundation sidebar shortcut.
-- Clarified that Discord is for coaching clients and its invitation is shared privately during onboarding; no invite URL was published because none was found in the repository.
+- Initially no invite URL was available in the repository; this was superseded when the public BFit Lounge invite was supplied and linked across all five pages.
 - Replaced Gamer Fit's outdated single-coaching-plan copy with Premium and Elite; programming and workbook logic were not intentionally changed.
 - Checked that each of the five HTML sources contains all three profile destinations. External account availability and live mobile rendering still require verification.
 
@@ -22,7 +30,7 @@
 - Updated the hub, Foundation, Athleticism, and Run Strong to identify two coaching plans: Premium and Elite.
 - Removed single-plan claims and kept pricing off public pages; the questionnaire remains the destination for current terms.
 - Left programming, workout builder logic, export functions, and exercise IDs intact.
-- Gamer Fit still requires direct content inspection because the GitHub connector returned empty file content; its coaching copy was not changed in this pass.
+- Gamer Fit initially required separate Git blob access; it was subsequently retrieved and its Premium/Elite copy was updated.
 - The Google Form's actual plan descriptions and its email/Zapier follow-up were not accessible for verification.
 
 
