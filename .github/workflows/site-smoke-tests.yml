@@ -20,6 +20,8 @@ jobs:
           node-version: "22"
       - name: Check pages, inline scripts, JSON and internal links
         run: node scripts/audit-site.mjs
+      - name: Validate athletic training workload data and Starter totals
+        run: node scripts/audit-program-data.mjs
       - name: Install headless browser
         run: |
           npm install --no-save playwright @axe-core/playwright
@@ -32,6 +34,8 @@ jobs:
         run: node scripts/core-flows.mjs
       - name: Test guide layout and navigation refinements
         run: node scripts/guide-layout-flows.mjs
+      - name: Test new-visitor paths and shared guide navigation
+        run: node scripts/beginner-entry-flows.mjs
       - name: Check public guide, exercise library and inquiry URLs
         run: node scripts/public-links.mjs
       - name: Review public coaching form without submitting
