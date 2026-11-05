@@ -127,14 +127,16 @@ try {
     }
   });
   await check('Hub WCAG 2.1 A and AA accessibility scan', async () => {
-    const page = await browser.newPage({viewport:{width:390,height:844}});
+    // axe-core/playwright requires a standalone browser context rather than browser.newPage().
+    const context = await browser.newContext({viewport:{width:390,height:844}});
+    const page = await context.newPage();
     try {
       await page.goto(host+'/');
       const result = await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
       if (result.violations.length) {
         throw Error(result.violations.map(v=>v.id+' ('+v.impact+'): '+v.nodes.map(n=>n.target.join(' ')).join(', ')).join(' | '));
       }
-    } finally { await page.close(); }
+    } finally { await context.close(); }
   });
 } catch (e) {
   failures.push('Runner: ' + e.message);
